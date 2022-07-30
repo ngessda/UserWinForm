@@ -1,0 +1,11 @@
+D:\C#\User\User\bin\Debug\User.exe.config
+D:\C#\User\User\bin\Debug\User.exe
+D:\C#\User\User\bin\Debug\User.pdb
+D:\C#\User\User\obj\Debug\User.csproj.AssemblyReference.cache
+D:\C#\User\User\obj\Debug\User.csproj.SuggestedBindingRedirects.cache
+D:\C#\User\User\obj\Debug\User.Form1.resources
+D:\C#\User\User\obj\Debug\User.Properties.Resources.resources
+D:\C#\User\User\obj\Debug\User.csproj.GenerateResource.cache
+D:\C#\User\User\obj\Debug\User.csproj.CoreCompileInputs.cache
+D:\C#\User\User\obj\Debug\User.exe
+D:\C#\User\User\obj\Debug\User.pdb
