@@ -63,22 +63,24 @@ namespace User
         }
         public void Delete(int id)
         {
-            bool counter = false;
+            int counter = 0;
+            bool flag = false;
             for (int i = 0; i < _users.Count; i++)
             {
                 if (_users[i].Id == id)
                 {
-                    counter = true;
+                    counter = i;
+                    flag = true;
                     break;
                 }
             }
-            if (!counter)
+            if (!flag)
             {
                 throw new Exception();
             }
             else
             {
-                _users.RemoveAt(id);
+                _users.RemoveAt(counter);
             }
         }
     }
