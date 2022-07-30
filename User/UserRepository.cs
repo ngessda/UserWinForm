@@ -41,7 +41,7 @@ namespace User
                     break;
                 }
             }
-            if (counter)
+            if (!counter)
             {
                 throw new Exception();
             }
@@ -72,7 +72,7 @@ namespace User
                     break;
                 }
             }
-            if (counter)
+            if (!counter)
             {
                 throw new Exception();
             }
