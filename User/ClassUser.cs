@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace User
 {
-    public class ClassUser : ICloneable
+    public class ClassUser
     {
         public int Id { get; set; }
         public string Username { get; set; }
@@ -14,10 +14,6 @@ namespace User
         public override string ToString()
         {
             return $"[{Id}] - {Username}";
-        }
-        public object Clone()
-        {
-            return this.MemberwiseClone();
         }
     }
 }
