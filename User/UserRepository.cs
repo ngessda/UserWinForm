@@ -9,25 +9,30 @@ namespace User
     public class UserRepository
     {
         private List<ClassUser> _users = new List<ClassUser>();
+        private int counter = 0;
         public void Save(ClassUser user)
         {
-            bool counter = false;
+            int index = 0;
+            bool flag = false;
             for(int i = 0; i < _users.Count; i++)
             {
                 if(_users[i].Id == user.Id)
                 {
-                    counter = true;
+                    flag = true;
+                    index = i;
                     break;
                 }
             }
-            if (!counter)
+            if (!flag)
             {
-                user.Id = _users.Count;
+                user.Id = counter;
                 _users.Add(user);
+                counter++;
             }
             else
             {
-                Console.WriteLine("Пользователь с таким Id уже существует");
+                _users[index].Username = user.Username;
+                _users[index].Password = user.Password;
             }
         }
         public ClassUser Get(int id)
